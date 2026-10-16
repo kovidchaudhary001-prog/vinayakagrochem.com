@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinayak Agro Chem | विनायक एग्रो केम | Crop Protection & Agricultural Solutions</title>
+  <meta name="description" content="Vinayak Agro Chem - Leading B2B manufacturer and marketer of agricultural inputs, crop protection, insecticides, fungicides, herbicides and plant growth regulators. Khasra no 245 Vill Lukhatia Iglas Aligarh.">
+  
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#C8102E',
+              darkred: '#9B0B22',
+              green: '#1B7E3C',
+              darkgreen: '#115326',
+              yellow: '#F5A623',
+              gold: '#D97706',
+              cream: '#FFFDF9',
+              slate: '#1E293B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            hindi: ['Mukta', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .product-card { transition: all 0.25s ease-in-out; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -10px rgba(0,0,0,0.15); }
+    [contenteditable="true"] { outline: 2px dashed #f59e0b !important; background: rgba(245, 158, 11, 0.08) !important; border-radius: 4px; padding: 2px 4px; }
+  </style>
+</head>
+<body class="bg-[#F8FAF8] text-slate-800 font-sans antialiased">
+
+  <!-- TOP OWNER TOOLBAR (HIDDEN BY DEFAULT FROM VISITORS) -->
+  <div id="ownerToolbar" class="hidden bg-slate-900 text-white text-xs py-2 px-4 sticky top-0 z-50 border-b border-slate-700 flex-wrap items-center justify-between gap-3 shadow-md">
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-emerald-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span id="ownerStatusText">Owner Edit Mode Active</span>
+      </span>
+    </div>
+    
+    <div class="flex items-center gap-2">
+      <button onclick="openEditLogoModal()" class="px-3 py-1 rounded bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition flex items-center gap-1">
+        <i class="fa-solid fa-image"></i> Change Logo
+      </button>
+      <button onclick="openEditHeroModal()" class="px-3 py-1 rounded bg-teal-600 hover:bg-teal-700 text-white font-medium transition flex items-center gap-1">
+        <i class="fa-solid fa-panorama"></i> Change Hero Banner
+      </button>
+      <button onclick="openAddProductModal()" class="px-3 py-1 rounded bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition flex items-center gap-1">
+        <i class="fa-solid fa-plus"></i> Add Product
+      </button>
+      <button onclick="openAddColumnModal()" class="px-3 py-1 rounded bg-blue-600 hover:bg-blue-700 text-white font-medium transition flex items-center gap-1">
+        <i class="fa-solid fa-table-columns"></i> + Column
+      </button>
+      <button onclick="exportStandaloneHTML()" class="px-3 py-1 rounded bg-purple-600 hover:bg-purple-700 text-white font-medium transition flex items-center gap-1 shadow">
+        <i class="fa-solid fa-download"></i> Export HTML
+      </button>
+      <button id="toggleEditBtn" onclick="toggleOwnerMode()" class="px-3 py-1 rounded bg-red-600 hover:bg-red-700 text-white font-semibold transition flex items-center gap-1.5 ml-2">
+        <i class="fa-solid fa-lock" id="lockIcon"></i>
+        <span id="editBtnText">Lock / Exit</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- UTILITY BAR -->
+  <div class="bg-brand-darkgreen text-white text-xs py-2 px-4 border-b border-emerald-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-5">
+        <a href="tel:9557480059" class="flex items-center gap-1.5 hover:text-amber-300 transition">
+          <i class="fa-solid fa-phone text-amber-400"></i>
+          <span>Helpline: <strong class="font-bold tracking-wide editable-text" data-key="companyPhone">9557480059</strong></span>
+        </a>
+        <a href="mailto:vinayakagrochem469@gmail.com" class="hidden md:flex items-center gap-1.5 hover:text-amber-300 transition">
+          <i class="fa-solid fa-envelope text-amber-400"></i>
+          <span class="editable-text" data-key="companyEmail">vinayakagrochem469@gmail.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:flex items-center gap-1.5 text-emerald-100">
+          <i class="fa-solid fa-location-dot text-amber-400"></i>
+          <span class="editable-text" data-key="companyCity">Iglas, Aligarh (U.P.)</span>
+        </span>
+        <a href="#dealers" class="bg-brand-yellow hover:bg-amber-500 text-slate-900 font-bold px-3 py-0.5 rounded text-[11px] uppercase tracking-wider transition">
+          Dealer Enquiry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      
+      <!-- LOGO & COMPANY NAME -->
+      <div class="flex items-center gap-3">
+        <a href="#home" class="flex items-center gap-3 group">
+          <!-- EMBLEM CONTAINER (SVG OR CUSTOM UPLOADED IMAGE) -->
+          <div id="companyLogoContainer" class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-white rounded-xl shadow-sm border border-emerald-100 p-1 overflow-hidden">
+            <svg id="defaultLogoSvg" viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+              <path d="M 50 18 C 50 18 36 32 46 50 C 54 34 50 18 50 18 Z" fill="#78C224"/>
+              <path d="M 50 18 C 50 18 64 32 54 50 C 46 34 50 18 50 18 Z" fill="#9DE637"/>
+              <path d="M 50 88 L 18 64 C 28 66 40 68 50 88 Z" fill="#1C4BB8"/>
+              <path d="M 50 88 L 82 46 C 64 64 48 78 50 88 Z" fill="#245CE6"/>
+              <path d="M 16 28 C 34 44 48 64 22 74 C 14 54 16 28 16 28 Z" fill="#2E9E41"/>
+              <path d="M 18 64 C 44 68 84 48 94 8 C 76 36 46 54 18 64 Z" fill="#3AB54A"/>
+            </svg>
+            <img id="customLogoImg" src="" alt="Vinayak Agro Chem Logo" class="hidden w-full h-full object-contain">
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-red font-sans leading-none editable-text" data-key="brandNameEn">
+                VINAYAK AGRO CHEM
+              </span>
+            </div>
+            <span class="text-xs sm:text-sm font-bold text-brand-green font-hindi block mt-0.5 tracking-wide editable-text" data-key="brandNameHi">
+              विनायक एग्रो केम
+            </span>
+          </div>
+        </a>
+
+        <!-- QUICK EDIT LOGO BUTTON IN OWNER MODE -->
+        <button id="quickEditLogoBtn" onclick="openEditLogoModal()" class="hidden p-1.5 rounded bg-amber-100 hover:bg-amber-200 text-amber-900 text-xs border border-amber-300" title="Edit Logo">
+          <i class="fa-solid fa-camera"></i>
+        </button>
+      </div>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+        <a href="#home" class="hover:text-brand-green transition py-1">Home</a>
+        <a href="#about" class="hover:text-brand-green transition py-1">About Us</a>
+        <a href="#products" class="hover:text-brand-green transition py-1 text-brand-green">Products</a>
+        <a href="#crops" class="hover:text-brand-green transition py-1">Crop Solutions</a>
+        <a href="#dealers" class="hover:text-brand-green transition py-1">Dealers & Network</a>
+        <a href="#contact" class="hover:text-brand-green transition py-1">Contact</a>
+      </nav>
+
+      <!-- CTA BUTTON -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#dealers" class="bg-brand-red hover:bg-brand-darkred text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition flex items-center gap-2">
+          <i class="fa-solid fa-handshake"></i>
+          <span>Become a Dealer</span>
+        </a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-brand-green focus:outline-none">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- MOBILE DROPDOWN -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-2">
+      <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium">About Us</a>
+      <a href="#products" onclick="toggleMobileMenu()" class="block py-2 text-brand-green font-bold">Products</a>
+      <a href="#crops" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium">Crop Solutions</a>
+      <a href="#dealers" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium">Become a Dealer</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium">Contact</a>
+      <a href="tel:9557480059" class="block w-full text-center py-2.5 rounded-lg bg-brand-green text-white font-bold mt-2">
+        <i class="fa-solid fa-phone mr-1"></i> Call Helpline
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-slate-900 text-white overflow-hidden py-16 lg:py-24">
+    <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#4ade80_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-700/60 border border-emerald-500/30 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide">
+          <i class="fa-solid fa-seedling"></i>
+          <span>विनायक एग्रो केम के उत्कृष्ट उत्पाद</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-hindi leading-tight tracking-tight text-white drop-shadow-sm">
+          <span class="editable-text text-amber-300" data-key="heroHindi1">खुशहाल किसान</span> – 
+          <span class="editable-text text-white" data-key="heroHindi2">समृद्ध भारत</span>
+        </h1>
+
+        <p class="text-xl sm:text-2xl font-bold font-hindi text-emerald-100 editable-text" data-key="heroHindiSub">
+          विश्वसनीय कृषि समाधान, बेहतर फसल और बेहतर भविष्य
+        </p>
+
+        <p class="text-base sm:text-lg text-slate-200 max-w-xl editable-text" data-key="heroEnSub">
+          Reliable Agricultural Solutions for Better Crops and Better Growth. Empowering farmers, dealers, and distributors with proven crop protection and productivity formulations.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#products" class="bg-brand-yellow hover:bg-amber-500 text-slate-950 font-extrabold px-6 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition flex items-center gap-2">
+            <span>Explore Products</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="#dealers" class="bg-brand-red hover:bg-brand-darkred text-white font-bold px-6 py-3.5 rounded-lg shadow-md hover:shadow-lg transition flex items-center gap-2">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Become a Dealer</span>
+          </a>
+          <a href="https://wa.me/919557480059" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3.5 rounded-lg transition flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+
+        <!-- TRUST BADGES -->
+        <div class="pt-6 grid grid-cols-3 gap-3 max-w-lg border-t border-emerald-700/60 text-xs sm:text-sm">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span class="text-emerald-100">Quality Inputs</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span class="text-emerald-100">B2B Network</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span class="text-emerald-100">Farmer Focused</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASTER BOARD PREVIEW CARD -->
+      <div class="lg:col-span-5">
+        <div class="bg-white p-3 rounded-2xl shadow-2xl border-4 border-amber-400/40 relative group">
+          <div class="rounded-xl overflow-hidden bg-slate-100 relative">
+            <img id="masterBannerImg" src="1000218921.jpg" alt="Vinayak Agro Chem Complete Product Range" class="w-full object-cover rounded-lg group-hover:scale-102 transition duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+              <div class="text-white">
+                <span class="text-[11px] bg-brand-red text-white px-2 py-0.5 rounded font-bold uppercase">Official Packaging Range</span>
+                <p class="font-hindi text-lg font-bold text-amber-300 mt-1">विनायक एग्रो केम के उत्कृष्ट उत्पाद</p>
+                <p class="text-xs text-slate-200">Manufactured & Marketed in Iglas, Aligarh (U.P.)</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 mt-2.5">
+            <button onclick="viewMasterBannerModal()" class="py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-expand text-amber-400"></i>
+              <span>Inspect Banner</span>
+            </button>
+            <button id="quickEditHeroBtn" onclick="openEditHeroModal()" class="hidden py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-lg text-xs font-bold transition items-center justify-center gap-1.5">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <span>Change Image</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-green">
+            <span class="w-6 h-0.5 bg-brand-green"></span>
+            <span>About The Company</span>
+          </div>
+          
+          <h2 class="text-3xl font-extrabold text-slate-900 leading-tight">
+            Committed to Farmer Success & Reliable Agricultural Solutions
+          </h2>
+          
+          <p class="text-base text-slate-600 leading-relaxed editable-text" data-key="aboutP1">
+            Vinayak Agro Chem is an Indian agricultural-input company focused on providing reliable crop protection and crop productivity solutions to farmers, dealers, and distributors.
+          </p>
+
+          <p class="text-base text-slate-600 leading-relaxed editable-text" data-key="aboutP2">
+            We are committed to serving the agricultural community through dependable agricultural products and long-term relationships. Our primary focus is on crop protection, plant growth, and establishing a trusted agrochemical distribution network across rural and agricultural markets.
+          </p>
+
+          <!-- VALUE PILLARS -->
+          <div class="grid sm:grid-cols-3 gap-3 pt-4">
+            <div class="bg-emerald-50 border border-emerald-100 p-3.5 rounded-xl">
+              <i class="fa-solid fa-flask-vial text-brand-green text-xl mb-1.5 block"></i>
+              <h4 class="font-bold text-slate-900 text-sm">Quality Products</h4>
+              <p class="text-xs text-slate-500 mt-1">Dependable formulations for healthy crop yield.</p>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-100 p-3.5 rounded-xl">
+              <i class="fa-solid fa-shield-halved text-brand-gold text-xl mb-1.5 block"></i>
+              <h4 class="font-bold text-slate-900 text-sm">Crop Protection</h4>
+              <p class="text-xs text-slate-500 mt-1">Targeted solutions for pests, insects & fungal diseases.</p>
+            </div>
+
+            <div class="bg-red-50 border border-red-100 p-3.5 rounded-xl">
+              <i class="fa-solid fa-handshake text-brand-red text-xl mb-1.5 block"></i>
+              <h4 class="font-bold text-slate-900 text-sm">Dealer Support</h4>
+              <p class="text-xs text-slate-500 mt-1">Transparent B2B partnerships and reliable supply.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 space-y-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-green text-white flex items-center justify-center text-lg font-bold">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-lg">Official Company Location</h3>
+              <p class="text-xs text-slate-500">Registered manufacturing & marketing base</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm text-slate-700 bg-white p-4 rounded-xl border border-slate-200">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-brand-red mt-1 text-base"></i>
+              <div>
+                <strong class="text-slate-900">Address:</strong>
+                <p class="editable-text text-slate-600 mt-0.5" data-key="companyAddress">Add. Khasra no 245, Vill Lukhatia, Iglas, Aligarh (U.P.)</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 border-t border-slate-100 pt-2.5">
+              <i class="fa-solid fa-phone text-brand-green text-base"></i>
+              <div>
+                <strong class="text-slate-900">Helpline:</strong>
+                <a href="tel:9557480059" class="text-brand-green font-bold ml-1 hover:underline editable-text" data-key="companyPhone">9557480059</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 border-t border-slate-100 pt-2.5">
+              <i class="fa-solid fa-envelope text-brand-yellow text-base"></i>
+              <div>
+                <strong class="text-slate-900">Email:</strong>
+                <a href="mailto:vinayakagrochem469@gmail.com" class="text-slate-600 ml-1 hover:underline editable-text" data-key="companyEmail">vinayakagrochem469@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border-l-4 border-amber-500 p-3.5 rounded text-xs text-amber-900 font-medium">
+            <i class="fa-solid fa-info-circle mr-1"></i>
+            Vinayak Agro Chem stands for honest Indian agriculture. We do not make exaggerated claims; our mission is dependable field performance and grower trust.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS CATALOGUE SECTION -->
+  <section id="products" class="py-16 bg-[#F4F7F4]">
+    <div class="max-w-7xl mx-auto px-4 space-y-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-green">
+            <span class="w-6 h-0.5 bg-brand-green"></span>
+            <span>Product Portfolio</span>
+          </div>
+          <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Our Agricultural Formulations</h2>
+          <p class="text-slate-600 text-sm mt-1">High-efficacy crop protection, plant growth regulators, insecticides and crop nutrition.</p>
+        </div>
+
+        <!-- SEARCH INPUT -->
+        <div class="w-full md:w-72 relative">
+          <input type="text" id="productSearch" oninput="filterProducts()" placeholder="Search product or formulation..." class="w-full bg-white border border-slate-300 rounded-lg pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green text-slate-800 shadow-sm">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400 text-xs"></i>
+        </div>
+      </div>
+
+      <!-- CATEGORY TABS -->
+      <div class="flex flex-wrap items-center gap-2 border-b border-slate-200 pb-3" id="categoryTabs">
+        <button onclick="setCategoryFilter('all')" class="cat-btn active px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-brand-green text-white shadow-sm" data-cat="all">All Products (<span id="countAll">28</span>)</button>
+        <button onclick="setCategoryFilter('Insecticide')" class="cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="Insecticide">Insecticides</button>
+        <button onclick="setCategoryFilter('Fungicide')" class="cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="Fungicide">Fungicides</button>
+        <button onclick="setCategoryFilter('Plant Growth Regulator')" class="cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="Plant Growth Regulator">Growth Regulators</button>
+        <button onclick="setCategoryFilter('Herbicide')" class="cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="Herbicide">Herbicides</button>
+        <button onclick="setCategoryFilter('Crop Nutrition')" class="cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="Crop Nutrition">Crop Nutrition</button>
+      </div>
+
+      <!-- PRODUCT CARDS GRID -->
+      <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+      <!-- NO RESULTS PLACEHOLDER -->
+      <div id="noResults" class="hidden text-center py-16 bg-white rounded-xl border border-slate-200">
+        <i class="fa-solid fa-box-open text-4xl text-slate-300 mb-3"></i>
+        <h4 class="text-base font-bold text-slate-700">No products found matching your search.</h4>
+        <p class="text-xs text-slate-500 mt-1">Try another keyword or reset category filter.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CROP SOLUTIONS SECTION -->
+  <section id="crops" class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-10">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-green">
+          <span class="w-6 h-0.5 bg-brand-green"></span>
+          <span>Crop-Wise Solutions</span>
+        </div>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Targeted Protection For Indian Crops</h2>
+        <p class="text-slate-600 text-sm mt-1">Tailored input programs for prominent field crops, pulses and vegetables.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- RICE / PADDY -->
+        <div class="bg-[#FBFDFB] border border-emerald-100 rounded-2xl p-5 space-y-3.5 shadow-sm hover:border-emerald-300 transition">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center text-lg font-bold">
+            <i class="fa-solid fa-wheat-awn"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-slate-900 text-lg">Rice / Paddy</h3>
+            <p class="text-xs font-bold text-brand-green font-hindi">सही कृषि समाधान के साथ स्वस्थ फसल और बेहतर उत्पादन</p>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Reliable stem borer and leaf folder protection with granular solutions like <strong>ULTIMATE</strong> (Fipronil 0.3% GR) and active foliar protection.
+          </p>
+          <button onclick="filterByCrop('Rice')" class="text-xs font-bold text-brand-green hover:underline flex items-center gap-1">
+            <span>View Rice Products</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- MOONG & PULSES -->
+        <div class="bg-[#FBFDFB] border border-emerald-100 rounded-2xl p-5 space-y-3.5 shadow-sm hover:border-emerald-300 transition">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg font-bold">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-slate-900 text-lg">Moong & Pulses</h3>
+            <p class="text-xs font-bold text-amber-700 font-hindi">फसल सुरक्षा और बेहतर बढ़वार के लिए विश्वसनीय समाधान</p>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Caterpillar and borer suppression with <strong>CROMAZAN</strong> (Chlorantraniliprole 18.5% SC) and nutritional vigor support.
+          </p>
+          <button onclick="filterByCrop('Moong')" class="text-xs font-bold text-brand-green hover:underline flex items-center gap-1">
+            <span>View Pulse Products</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- COTTON -->
+        <div class="bg-[#FBFDFB] border border-emerald-100 rounded-2xl p-5 space-y-3.5 shadow-sm hover:border-emerald-300 transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg font-bold">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-slate-900 text-lg">Cotton</h3>
+            <p class="text-xs font-bold text-blue-700 font-hindi">कपास की फसल के लिए प्रभावी कृषि समाधान</p>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Sucking pest control with <strong>VISTARA</strong> and bollworm defense formulations engineered for clean, productive cotton bolls.
+          </p>
+          <button onclick="filterByCrop('Cotton')" class="text-xs font-bold text-brand-green hover:underline flex items-center gap-1">
+            <span>View Cotton Products</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- VEGETABLES & FRUITS -->
+        <div class="bg-[#FBFDFB] border border-emerald-100 rounded-2xl p-5 space-y-3.5 shadow-sm hover:border-emerald-300 transition">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-brand-red flex items-center justify-center text-lg font-bold">
+            <i class="fa-solid fa-apple-whole"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-slate-900 text-lg">Vegetables</h3>
+            <p class="text-xs font-bold text-brand-red font-hindi">स्वस्थ फसल और बेहतर विकास के लिए समाधान</p>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Fungal management with <strong>TEBUSULF</strong> and growth vigor promotion via <strong>TERAS</strong> and <strong>GROWTH</strong>.
+          </p>
+          <button onclick="filterByCrop('Vegetables')" class="text-xs font-bold text-brand-green hover:underline flex items-center gap-1">
+            <span>View Vegetable Products</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEALERSHIP B2B SECTION -->
+  <section id="dealers" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-6 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/70 border border-emerald-500/40 text-amber-300 text-xs font-semibold">
+          <i class="fa-solid fa-handshake"></i>
+          <span>B2B Partnership & Distribution</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-hindi leading-tight">
+          विनायक एग्रो केम के डीलर नेटवर्क से जुड़ें
+        </h2>
+
+        <p class="text-base text-slate-300 leading-relaxed">
+          We are expanding our agricultural dealership network across Uttar Pradesh and neighboring agricultural regions. If you run a registered agri-input counter, retail seed/fertilizer business, or regional distribution firm, we welcome you to partner with us.
+        </p>
+
+        <div class="space-y-3 pt-2 text-sm text-slate-300">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span>Transparent business terms and timely dispatch</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span>Verified formulation standards trusted by growers</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span>Comprehensive packaging sizes: pouches, bottles, canisters, and cartons</span>
+          </div>
+        </div>
+
+        <div class="pt-4 flex items-center gap-4">
+          <a href="https://wa.me/919557480059?text=Hello%20Vinayak%20Agro%20Chem,%20I%20am%20interested%20in%20taking%20a%20dealership." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-3 rounded-lg transition flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Direct WhatsApp Enquiry</span>
+          </a>
+          <a href="tel:9557480059" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold px-5 py-3 rounded-lg transition flex items-center gap-2">
+            <i class="fa-solid fa-phone text-amber-400"></i>
+            <span>Call 9557480059</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- DEALERSHIP APPLICATION FORM -->
+      <div class="lg:col-span-6 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h3 class="text-xl font-extrabold text-slate-900 mb-1">Dealership Enquiry Form</h3>
+        <p class="text-xs text-slate-500 mb-5">Fill in your business details. Our distribution desk will connect with you.</p>
+
+        <form id="dealerForm" onsubmit="handleDealerSubmit(event)" class="space-y-3.5">
+          <div class="grid sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
+              <input type="text" id="dealerName" required class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Shop / Firm Name *</label>
+              <input type="text" id="dealerFirm" required class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mobile Number (WhatsApp) *</label>
+              <input type="tel" id="dealerMobile" required placeholder="10-digit number" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Email ID</label>
+              <input type="email" id="dealerEmail" placeholder="optional" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">District / Tehsil *</label>
+              <input type="text" id="dealerDistrict" required placeholder="e.g. Aligarh, Mathura..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">State *</label>
+              <input type="text" id="dealerState" required value="Uttar Pradesh" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Products Interested In</label>
+            <input type="text" id="dealerProducts" placeholder="e.g. CROMAZAN, ULTIMATE, ACTION 505..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Brief Message</label>
+            <textarea id="dealerMessage" rows="2" placeholder="Tell us about your retail network..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-brand-red hover:bg-brand-darkred text-white font-bold rounded-lg shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Submit Dealership Enquiry</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FARMER HUB SECTION -->
+  <section class="py-16 bg-[#F8FAF8] border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-emerald-800 to-emerald-950 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-lg">
+        <div class="max-w-2xl space-y-4 relative z-10">
+          <div class="inline-flex items-center gap-2 text-amber-300 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Farmer First</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-hindi leading-tight">
+            किसान की फसल, हमारी जिम्मेदारी
+          </h2>
+
+          <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+            At Vinayak Agro Chem, every bottle and pouch is formulated with the Indian grower in mind. We believe a prosperous farmer is the backbone of a strong nation.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="tel:9557480059" class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition flex items-center gap-2">
+              <i class="fa-solid fa-headset"></i>
+              <span>Farmer Helpline: 9557480059</span>
+            </a>
+            <a href="https://wa.me/919557480059?text=Crop%20advisory%20enquiry" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-lg text-sm transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>Ask Crop Advisory</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 space-y-10">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-green">
+          <span class="w-6 h-0.5 bg-brand-green"></span>
+          <span>Reach Out</span>
+        </div>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Contact Vinayak Agro Chem</h2>
+        <p class="text-slate-600 text-sm mt-1">Get in touch for dealership, distributorship, bulk orders, or product information.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        
+        <!-- CARD: HELPLINE -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center space-y-3">
+          <div class="w-12 h-12 mx-auto rounded-full bg-emerald-100 text-brand-green flex items-center justify-center text-xl">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h4 class="font-extrabold text-slate-900 text-base">Direct Helpline</h4>
+          <p class="text-xs text-slate-500">Available during standard business hours</p>
+          <a href="tel:9557480059" class="block text-xl font-bold text-brand-green hover:underline editable-text" data-key="companyPhone">
+            9557480059
+          </a>
+          <a href="tel:9557480059" class="inline-block mt-2 px-4 py-1.5 rounded-lg bg-brand-green text-white text-xs font-bold">Call Now</a>
+        </div>
+
+        <!-- CARD: WHATSAPP -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center space-y-3">
+          <div class="w-12 h-12 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h4 class="font-extrabold text-slate-900 text-base">WhatsApp Support</h4>
+          <p class="text-xs text-slate-500">Instant catalogue sharing & product quotes</p>
+          <a href="https://wa.me/919557480059" target="_blank" class="block text-xl font-bold text-emerald-600 hover:underline">
+            +91 9557480059
+          </a>
+          <a href="https://wa.me/919557480059" target="_blank" class="inline-block mt-2 px-4 py-1.5 rounded-lg bg-emerald-600 text-white text-xs font-bold">Chat on WhatsApp</a>
+        </div>
+
+        <!-- CARD: EMAIL -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center space-y-3">
+          <div class="w-12 h-12 mx-auto rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xl">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h4 class="font-extrabold text-slate-900 text-base">Email Office</h4>
+          <p class="text-xs text-slate-500">For formal dealership proposals & billing</p>
+          <a href="mailto:vinayakagrochem469@gmail.com" class="block text-sm font-bold text-slate-800 hover:underline truncate editable-text" data-key="companyEmail">
+            vinayakagrochem469@gmail.com
+          </a>
+          <a href="mailto:vinayakagrochem469@gmail.com" class="inline-block mt-2 px-4 py-1.5 rounded-lg bg-slate-800 text-white text-xs font-bold">Send Email</a>
+        </div>
+
+      </div>
+
+      <!-- ADDRESS & MAP CARD -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-red">Manufacturing & Marketing Facility</span>
+          <h3 class="text-xl font-black text-slate-900 mt-1">VINAYAK AGRO CHEM</h3>
+          <p class="text-sm text-slate-700 mt-3 font-medium editable-text" data-key="companyAddress">
+            Add. Khasra no 245, Vill Lukhatia, Iglas, Aligarh (U.P.)
+          </p>
+          <p class="text-xs text-slate-500 mt-2">
+            Located in the agricultural belt of Western Uttar Pradesh, servicing regional and interstate dealer networks.
+          </p>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
+          <i class="fa-solid fa-map-location-dot text-3xl text-brand-green mb-2 block"></i>
+          <h4 class="font-bold text-slate-800 text-sm">Directions / Location Anchor</h4>
+          <p class="text-xs text-slate-500 mt-1 mb-3">Lukhatia, Iglas, District Aligarh, Uttar Pradesh</p>
+          <a href="https://maps.google.com/?q=Iglas+Aligarh+Uttar+Pradesh" target="_blank" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition inline-flex items-center gap-1.5">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- COL 1 -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <span class="text-lg font-black text-brand-red">VINAYAK AGRO CHEM</span>
+        </div>
+        <p class="font-hindi text-amber-400 font-bold text-sm">"खुशहाल किसान – समृद्ध भारत"</p>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Reliable B2B agricultural inputs, crop protection chemicals, and productivity formulations.
+        </p>
+      </div>
+
+      <!-- COL 2 -->
+      <div>
+        <h4 class="font-bold text-white text-sm mb-3">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#products" class="hover:text-white transition">Product Range</a></li>
+          <li><a href="#crops" class="hover:text-white transition">Crop Solutions</a></li>
+          <li><a href="#dealers" class="hover:text-white transition">Become a Dealer</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 3 -->
+      <div>
+        <h4 class="font-bold text-white text-sm mb-3">Official Details</h4>
+        <p class="text-slate-300"><strong>Location:</strong> Khasra no 245, Vill Lukhatia, Iglas, Aligarh</p>
+        <p class="text-slate-300 mt-2"><strong>Helpline:</strong> 9557480059</p>
+        <p class="text-slate-300 mt-1"><strong>Email:</strong> vinayakagrochem469@gmail.com</p>
+      </div>
+
+      <!-- COL 4 -->
+      <div class="space-y-3">
+        <h4 class="font-bold text-white text-sm mb-3">Owner Control</h4>
+        <p class="text-xs text-slate-400">Unlock Owner Mode to edit product details, photos, or custom columns anytime without coding.</p>
+        <!-- Owner Mode Entrance Trigger -->
+        <button onclick="requestOwnerAccess()" class="px-3 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-amber-400 font-semibold border border-slate-700 transition">
+          <i class="fa-solid fa-lock text-xs mr-1"></i> Owner Portal Access
+        </button>
+        <p class="text-[10px] text-slate-600">Shortcut: Press Ctrl + Shift + O</p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 pt-8 mt-8 border-t border-slate-900 text-center text-slate-400">
+      © <span id="currentYear">2026</span> Vinayak Agro Chem (विनायक एग्रो केम). All rights reserved. Built for Indian Agriculture.
+    </div>
+  </footer>
+
+  <!-- FLOATING MOBILE QUICK ACTION BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-slate-200 px-3 py-2 flex items-center justify-between sm:hidden shadow-lg">
+    <a href="tel:9557480059" class="flex-1 mr-2 py-2.5 rounded-lg bg-brand-green text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call 9557480059</span>
+    </a>
+    <a href="https://wa.me/919557480059" target="_blank" class="flex-1 ml-2 py-2.5 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow">
+      <i class="fa-brands fa-whatsapp text-sm"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- PIN UNLOCK MODAL -->
+  <div id="pinModal" class="fixed inset-0 z-50 bg-black/60 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-sm w-full p-6 text-white space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-extrabold text-base flex items-center gap-2">
+          <i class="fa-solid fa-lock text-amber-400"></i>
+          <span>Owner Access PIN</span>
+        </h3>
+        <button onclick="closePinModal()" class="text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <p class="text-xs text-slate-300">Enter your 4-digit PIN to enable live editing mode.</p>
+      <div>
+        <input type="password" id="pinInput" maxlength="6" autocomplete="off" placeholder="••••" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2.5 text-center text-lg tracking-widest text-amber-400 font-mono focus:outline-none focus:ring-2 focus:ring-amber-400" onkeyup="if(event.key==='Enter') verifyOwnerPin()">
+      </div>
+      <div id="pinError" class="hidden text-xs text-red-400 font-medium">Incorrect PIN. Please try again.</div>
+      <div class="flex gap-2">
+        <button onclick="closePinModal()" class="flex-1 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold">Cancel</button>
+        <button onclick="verifyOwnerPin()" class="flex-1 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDIT LOGO MODAL -->
+  <div id="logoEditModal" class="fixed inset-0 z-50 bg-black/70 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-slate-800 space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h3 class="font-black text-lg text-slate-900">Change Company Logo</h3>
+        <button onclick="closeEditLogoModal()" class="text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div class="space-y-3 text-xs">
+        <div class="flex justify-center py-2">
+          <div class="w-20 h-20 border border-slate-200 rounded-xl p-2 flex items-center justify-center bg-slate-50">
+            <img id="logoModalPreview" src="" alt="Logo Preview" class="max-h-full max-w-full object-contain">
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Upload Logo Image</label>
+          <input type="file" id="logoFileInput" accept="image/*" onchange="handleLogoFileSelect(event)" class="text-xs file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-brand-green hover:file:bg-emerald-100 w-full">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Or Paste Image URL</label>
+          <input type="text" id="logoUrlInput" placeholder="https://..." oninput="updateLogoPreviewFromUrl()" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-xs">
+        </div>
+      </div>
+      <div class="flex gap-2 pt-2 border-t border-slate-100">
+        <button onclick="resetToDefaultLogo()" class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs">Reset to SVG</button>
+        <button onclick="saveLogoChanges()" class="flex-1 py-2 rounded-lg bg-brand-green hover:bg-brand-darkgreen text-white font-bold text-xs">Save Logo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDIT HERO BANNER MODAL -->
+  <div id="heroEditModal" class="fixed inset-0 z-50 bg-black/70 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 text-slate-800 space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h3 class="font-black text-lg text-slate-900">Change Home Page Banner Image</h3>
+        <button onclick="closeEditHeroModal()" class="text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div class="space-y-3 text-xs">
+        <div class="h-44 border border-slate-200 rounded-xl overflow-hidden bg-slate-100 flex items-center justify-center">
+          <img id="heroModalPreview" src="" alt="Hero Banner Preview" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Upload New Banner Photo</label>
+          <input type="file" id="heroFileInput" accept="image/*" onchange="handleHeroFileSelect(event)" class="text-xs file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-brand-green hover:file:bg-emerald-100 w-full">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Or Paste Image URL</label>
+          <input type="text" id="heroUrlInput" placeholder="https://..." oninput="updateHeroPreviewFromUrl()" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-xs">
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 pt-2 border-t border-slate-100">
+        <button onclick="closeEditHeroModal()" class="px-4 py-2 rounded-lg bg-slate-100 text-slate-700 font-bold text-xs">Cancel</button>
+        <button onclick="saveHeroBannerChanges()" class="px-5 py-2 rounded-lg bg-brand-green hover:bg-brand-darkgreen text-white font-bold text-xs">Save Banner Image</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT EDIT / PHOTO UPLOAD MODAL -->
+  <div id="productEditModal" class="fixed inset-0 z-50 bg-black/70 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 text-slate-800 space-y-4 shadow-2xl my-8">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h3 class="font-black text-lg text-slate-900" id="productModalTitle">Edit Product & Photo</h3>
+        <button onclick="closeProductEditModal()" class="text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <form id="productEditForm" onsubmit="saveProductChanges(event)" class="space-y-3.5 text-xs">
+        <input type="hidden" id="editProdId">
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Product Name (English)</label>
+            <input type="text" id="editProdName" required class="w-full border border-slate-300 rounded-lg px-3 py-2">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Product Name (Hindi)</label>
+            <input type="text" id="editProdHindi" class="w-full border border-slate-300 rounded-lg px-3 py-2 font-hindi">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Technical / Active Ingredient Formulation</label>
+          <input type="text" id="editProdTechnical" required class="w-full border border-slate-300 rounded-lg px-3 py-2">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Category</label>
+            <select id="editProdCategory" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="Insecticide">Insecticide</option>
+              <option value="Fungicide">Fungicide</option>
+              <option value="Plant Growth Regulator">Plant Growth Regulator</option>
+              <option value="Herbicide">Herbicide</option>
+              <option value="Crop Nutrition">Crop Nutrition</option>
+              <option value="Specialty">Specialty</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Target Crops / Purpose</label>
+            <input type="text" id="editProdCrops" placeholder="e.g. Rice, Cotton, Moong" class="w-full border border-slate-300 rounded-lg px-3 py-2">
+          </div>
+        </div>
+
+        <!-- PHOTO UPLOAD & PREVIEW -->
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
+          <label class="block font-bold text-slate-800">Product Photograph</label>
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 rounded-lg bg-white border border-slate-300 overflow-hidden flex items-center justify-center flex-shrink-0">
+              <img id="editImagePreview" src="" alt="preview" class="w-full h-full object-contain">
+            </div>
+            <div class="flex-1 space-y-1">
+              <input type="file" id="editImageFile" accept="image/*" onchange="handleImageFileSelect(event)" class="text-xs file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-brand-green hover:file:bg-emerald-100">
+              <p class="text-[10px] text-slate-500">Or paste public URL:</p>
+              <input type="text" id="editImageUrl" placeholder="https://..." oninput="updateImagePreviewFromUrl()" class="w-full border border-slate-200 rounded px-2 py-1 text-[11px]">
+            </div>
+          </div>
+        </div>
+
+        <!-- DYNAMIC CUSTOM ATTRIBUTES CONTAINER -->
+        <div id="dynamicCustomFields" class="space-y-2 pt-1 border-t border-slate-100"></div>
+
+        <div class="flex items-center justify-end gap-2 pt-3 border-t border-slate-100">
+          <button type="button" onclick="closeProductEditModal()" class="px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-lg bg-brand-green hover:bg-brand-darkgreen text-white font-bold">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD COLUMN MODAL -->
+  <div id="addColumnModal" class="fixed inset-0 z-50 bg-black/60 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-slate-800 space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-extrabold text-base text-slate-900">Add Column / Specification</h3>
+        <button onclick="closeAddColumnModal()" class="text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <p class="text-xs text-slate-500">Add a new attribute across all products (e.g. "Pack Sizes", "Dosage", "Rate", "Batch").</p>
+      <div>
+        <label class="block text-xs font-bold text-slate-700 mb-1">Column Name *</label>
+        <input type="text" id="newColumnName" placeholder="e.g. Available Pack Sizes" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+      </div>
+      <div class="flex gap-2">
+        <button onclick="closeAddColumnModal()" class="flex-1 py-2 rounded-lg bg-slate-100 text-slate-700 font-bold text-xs">Cancel</button>
+        <button onclick="confirmAddColumn()" class="flex-1 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs">Add Column</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASTER BANNER ZOOM MODAL -->
+  <div id="masterBannerModal" class="fixed inset-0 z-50 bg-black/85 hidden flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl relative">
+      <div class="p-3 bg-slate-800 flex items-center justify-between text-white">
+        <span class="text-xs font-bold tracking-wide">Vinayak Agro Chem - Official Product Packaging Board</span>
+        <button onclick="closeMasterBannerModal()" class="text-slate-400 hover:text-white p-1">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div class="p-2 max-h-[80vh] overflow-auto flex items-center justify-center">
+        <img id="modalBoardZoomImg" src="1000218921.jpg" alt="Vinayak Agro Chem Factory Board" class="w-full object-contain rounded">
+      </div>
+    </div>
+  </div>
+
+  <!-- HIDDEN DIRECT IMAGE INPUT FOR QUICK CHANGE -->
+  <input type="file" id="directProductFileInput" accept="image/*" class="hidden" onchange="handleDirectFileChange(event)">
+
+  <!-- JAVASCRIPT: DATA & INTERACTION LOGIC -->
+  <script>
+    // UNLOADED PRODUCT IMAGE PLACEHOLDER (HIGH-RES AGRO BOTTLE SVG)
+    const UNLOADED_PLACEHOLDER_IMG = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'><rect width='100%25' height='100%25' fill='%23F8FAF8'/><g stroke='%23CBD5E1' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'><rect x='105' y='80' width='90' height='170' rx='18' fill='%23FFFFFF'/><path d='M130 80V50h40v30' fill='%23FFFFFF'/><line x1='122' y1='50' x2='178' y2='50' stroke='%231B7E3C' stroke-width='4'/><rect x='112' y='120' width='76' height='80' rx='4' fill='%23F0FDF4' stroke='%2386EFAC'/></g><path d='M140 160c0-12 20-6 20-18s-20-6-20-18' stroke='%231B7E3C' stroke-width='3' stroke-linecap='round' fill='none'/><text x='150' y='235' font-family='sans-serif' font-size='10' font-weight='800' fill='%2394A3B8' text-anchor='middle' letter-spacing='0.5'>VINAYAK PACKAGING</text></svg>";
+
+    // INITIAL PRODUCTS WITH EXACT PHOTOS
+    const DEFAULT_PRODUCTS = [
+      {
+        id: "TERAS",
+        name: "TERAS",
+        hindi: "टेरस",
+        technical: "Gibberellic Acid 0.186% SP",
+        category: "Plant Growth Regulator",
+        crops: "Vegetables, Fruits, Paddy",
+        image: "1000219601.jpg",
+        tagline: "Plant Growth Regulator SP",
+        extraFields: {}
+      },
+      {
+        id: "GROWTH",
+        name: "GROWTH",
+        hindi: "ग्रोथ",
+        technical: "Gibberellic Acid 0.001% L",
+        category: "Plant Growth Regulator",
+        crops: "Cotton, Sugarcane, Paddy, Vegetables",
+        image: "1000236637.png",
+        tagline: "Plant Growth Regulator Liquid",
+        extraFields: {}
+      },
+      {
+        id: "LEVIL",
+        name: "LEVIL",
+        hindi: "लेविल",
+        technical: "Emamectin Benzoate 1.9% EC",
+        category: "Insecticide",
+        crops: "Cotton, Moong, Vegetables",
+        image: "1000180983.png",
+        tagline: "इल्ली और छेदक कीटों पर अचूक असर",
+        extraFields: {}
+      },
+      {
+        id: "GOLD-25",
+        name: "GOLD-25",
+        hindi: "गोल्ड-25",
+        technical: "Cypermethrin 25% EC",
+        category: "Insecticide",
+        crops: "Cotton, Vegetables, Field Crops",
+        image: "1000178480.png",
+        tagline: "High performance contact insect control",
+        extraFields: {}
+      },
+      {
+        id: "TEBUSULF",
+        name: "TEBUSULF",
+        hindi: "टेबूसल्फ",
+        technical: "Tebuconazole 10% + Sulphur 65% WG",
+        category: "Fungicide",
+        crops: "Chilli, Soybean, Groundnut, Vegetables",
+        image: "1000169437.png",
+        tagline: "Dual action systemic & contact fungicide",
+        extraFields: {}
+      },
+      {
+        id: "VISTARA",
+        name: "VISTARA",
+        hindi: "विस्तारा",
+        technical: "Thiamethoxam 25% WG",
+        category: "Insecticide",
+        crops: "Rice, Cotton, Mustard, Vegetables",
+        image: "1000169438.png",
+        tagline: "Broad spectrum sucking pest management",
+        extraFields: {}
+      },
+      {
+        id: "CROMAZAN",
+        name: "CROMAZAN",
+        hindi: "क्रोमाजन",
+        technical: "Chlorantraniliprole 18.5% SC",
+        category: "Insecticide",
+        crops: "Rice, Moong, Sugarcane, Vegetables",
+        image: "1000162976.png",
+        tagline: "इल्ली और छेदक कीटों पर तेज़ और लंबा असर",
+        extraFields: {}
+      },
+      {
+        id: "ULTRA_SULF",
+        name: "ULTRA SULF",
+        hindi: "अल्ट्रा सल्फ",
+        technical: "Sulphur 80% WDG",
+        category: "Fungicide",
+        crops: "Grapes, Apple, Cumin, Mustard",
+        image: "1000116512.png",
+        tagline: "Fungicide & Acaricide Micronutrient",
+        extraFields: {}
+      },
+      {
+        id: "ULTIMATE_GR",
+        name: "ULTIMATE",
+        hindi: "अल्टीमेट (GR)",
+        technical: "Fipronil 0.3% GR",
+        category: "Insecticide",
+        crops: "Rice, Sugarcane, Field Crops",
+        image: "1000125523.png",
+        tagline: "धान और गन्ने के लिए प्रमुख कीटनाशक",
+        extraFields: {}
+      },
+      {
+        id: "ACTION_505",
+        name: "ACTION 505",
+        hindi: "एक्शन 505",
+        technical: "Chlorpyriphos 50% + Cypermethrin 5% EC",
+        category: "Insecticide",
+        crops: "Cotton, Paddy, Vegetables",
+        image: "1000111288.png",
+        tagline: "Dual action contact & stomach poison",
+        extraFields: {}
+      },
+      {
+        id: "EURO",
+        name: "EURO",
+        hindi: "यूरो",
+        technical: "Triacontanol 0.05% GR",
+        category: "Plant Growth Regulator",
+        crops: "Rice, Moong, Wheat, Vegetables",
+        image: "",
+        tagline: "यूरो – आपकी फसल की असली ताक़त, भरपूर बढ़वार!",
+        extraFields: {}
+      },
+      {
+        id: "VIN-45",
+        name: "VIN-45",
+        hindi: "विन-45",
+        technical: "Mancozeb 75% WP",
+        category: "Fungicide",
+        crops: "Potato, Tomato, Paddy, Vegetables",
+        image: "",
+        tagline: "Proven broad spectrum protective fungicide",
+        extraFields: {}
+      },
+      {
+        id: "FINISH",
+        name: "FINISH",
+        hindi: "फिनिश",
+        technical: "Metalaxyl 35% WS",
+        category: "Fungicide",
+        crops: "Seed treatment for pulses & oilseeds",
+        image: "",
+        tagline: "Systemic seed dressing protection",
+        extraFields: {}
+      },
+      {
+        id: "TATKAL_PLUS",
+        name: "TATKAL+",
+        hindi: "तत्काल+",
+        technical: "Gibberellic Acid Formulation",
+        category: "Plant Growth Regulator",
+        crops: "Paddy, Sugarcane, Vegetables",
+        image: "",
+        tagline: "Rapid vegetative boost",
+        extraFields: {}
+      },
+      {
+        id: "SAFE",
+        name: "SAFE",
+        hindi: "सेफ",
+        technical: "Carbendazim 12% + Mancozeb 63% WP",
+        category: "Fungicide",
+        crops: "Groundnut, Paddy, Vegetables",
+        image: "",
+        tagline: "Dual systematic and contact defense",
+        extraFields: {}
+      },
+      {
+        id: "DYNAMO",
+        name: "DYNAMO",
+        hindi: "डायनमो",
+        technical: "Cartap Hydrochloride 50% SP",
+        category: "Insecticide",
+        crops: "Rice, Vegetables",
+        image: "",
+        tagline: "Stem borer and leaf folder expert",
+        extraFields: {}
+      },
+      {
+        id: "VRIDHI",
+        name: "VRIDHI",
+        hindi: "वृद्धी",
+        technical: "Humic + Amino Acid + Folic Acid",
+        category: "Crop Nutrition",
+        crops: "All Crops",
+        image: "",
+        tagline: "ताकत जड़ों से, फायदा हर खेत में!",
+        extraFields: {}
+      },
+      {
+        id: "ULTRON",
+        name: "ULTRON",
+        hindi: "अल्ट्रॉन",
+        technical: "Advanced Bio Crop Protector",
+        category: "Specialty",
+        crops: "Horticulture & Field Crops",
+        image: "",
+        tagline: "Premium plant defense",
+        extraFields: {}
+      },
+      {
+        id: "VZOLE",
+        name: "VZOLE",
+        hindi: "वीज़ोल",
+        technical: "Tricyclazole Formulation",
+        category: "Fungicide",
+        crops: "Paddy Blast Management",
+        image: "",
+        tagline: "Specialist for blast protection",
+        extraFields: {}
+      },
+      {
+        id: "V_MITE",
+        name: "V-MITE SPECIAL",
+        hindi: "वी-माइट स्पेशल",
+        technical: "Acaricide Formulation",
+        category: "Insecticide",
+        crops: "Chilli, Tea, Vegetables",
+        image: "",
+        tagline: "Targeted red mite & yellow mite control",
+        extraFields: {}
+      },
+      {
+        id: "TALE_PLUS",
+        name: "TALE PLUS",
+        hindi: "टेल प्लस",
+        technical: "Broad Spectrum Herbicide Formulation",
+        category: "Herbicide",
+        crops: "Weed Control in Field Crops",
+        image: "",
+        tagline: "Selective weed management",
+        extraFields: {}
+      },
+      {
+        id: "QUID",
+        name: "QUID",
+        hindi: "क्विड",
+        technical: "Paraquat Dichloride 24% SL",
+        category: "Herbicide",
+        crops: "Non-crop & post-emergence directed",
+        image: "",
+        tagline: "Non-selective contact herbicide",
+        extraFields: {}
+      },
+      {
+        id: "RAPID",
+        name: "RAPID",
+        hindi: "रैपिड",
+        technical: "Insecticide Formulation",
+        category: "Insecticide",
+        crops: "Sucking & Chewing Pests",
+        image: "",
+        tagline: "Fast acting agricultural knockdown",
+        extraFields: {}
+      },
+      {
+        id: "PROTECT",
+        name: "PROTECT",
+        hindi: "प्रोटेक्ट",
+        technical: "Bio Crop Protector Formulation",
+        category: "Crop Nutrition",
+        crops: "All Field Crops",
+        image: "",
+        tagline: "Immunity and stress defense",
+        extraFields: {}
+      },
+      {
+        id: "ISHA",
+        name: "ISHA",
+        hindi: "ईशा",
+        technical: "Crop Protection Formulation",
+        category: "Insecticide",
+        crops: "Field Crops",
+        image: "",
+        tagline: "Dependable pest suppression",
+        extraFields: {}
+      },
+      {
+        id: "ULTIMATE_SC",
+        name: "ULTIMATE (SC)",
+        hindi: "अल्टीमेट लिक्विड",
+        technical: "Fipronil 5% SC",
+        category: "Insecticide",
+        crops: "Rice, Cotton, Chilli",
+        image: "",
+        tagline: "Systemic foliar suspension",
+        extraFields: {}
+      },
+      {
+        id: "SPACER",
+        name: "SPACER",
+        hindi: "स्पेसर",
+        technical: "Specialty Crop Protector",
+        category: "Specialty",
+        crops: "Horticulture",
+        image: "",
+        tagline: "Targeted crop coverage",
+        extraFields: {}
+      },
+      {
+        id: "SPECTRA",
+        name: "SPECTRA",
+        hindi: "स्पेक्ट्रा",
+        technical: "Fipronil 40% + Imidacloprid 40% WG",
+        category: "Insecticide",
+        crops: "Sugarcane, Groundnut, Cotton",
+        image: "",
+        tagline: "Dual power soil & foliar defense",
+        extraFields: {}
+      }
+    ];
+
+    // APPLICATION STATE
+    let products = [];
+    let customColumns = [];
+    let currentCategory = 'all';
+    let isOwnerMode = false;
+    let customLogo = "";
+    let customHeroBanner = "";
+    let activeQuickUploadProdId = null;
+
+    // HELPER: AUTOMATICALLY COMPRESS LARGE IMAGES TO PREVENT LOCALSTORAGE OVERFLOW
+    function compressImage(base64Str, maxWidth, maxHeight, quality, callback) {
+      const img = new Image();
+      img.src = base64Str;
+      img.onload = function() {
+        let width = img.width;
+        let height = img.height;
+        if (width > height) {
+          if (width > maxWidth) {
+            height = Math.round((height * maxWidth) / width);
+            width = maxWidth;
+          }
+        } else {
+          if (height > maxHeight) {
+            width = Math.round((width * maxHeight) / height);
+            height = maxHeight;
+          }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+        callback(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = function() {
+        callback(base64Str);
+      };
+    }
+
+    // SAFE LOCALSTORAGE WRAPPER
+    function saveProductsToStorage() {
+      try {
+        localStorage.setItem('vac_products', JSON.stringify(products));
+      } catch (err) {
+        alert("Browser memory (localStorage) is full! Please use image URLs or smaller images, or click 'Export HTML' to download your changes permanently.");
+      }
+    }
+
+    // INITIALIZATION
+    window.onload = function() {
+      loadStoredData();
+      renderProducts();
+      setupEditableListeners();
+      setupKeyboardShortcuts();
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    };
+
+    function loadStoredData() {
+      const storedProds = localStorage.getItem('vac_products');
+      if (storedProds) {
+        try { products = JSON.parse(storedProds); } catch (e) { products = DEFAULT_PRODUCTS; }
+      } else {
+        products = DEFAULT_PRODUCTS;
+      }
+
+      const storedCols = localStorage.getItem('vac_columns');
+      if (storedCols) {
+        try { customColumns = JSON.parse(storedCols); } catch (e) { customColumns = []; }
+      }
+
+      const storedTexts = localStorage.getItem('vac_texts');
+      if (storedTexts) {
+        try {
+          const textMap = JSON.parse(storedTexts);
+          document.querySelectorAll('.editable-text').forEach(el => {
+            const key = el.getAttribute('data-key');
+            if (key && textMap[key]) el.textContent = textMap[key];
+          });
+        } catch(e) {}
+      }
+
+      const savedLogo = localStorage.getItem('vac_logo');
+      if (savedLogo) applyLogoImage(savedLogo);
+
+      const savedHero = localStorage.getItem('vac_hero_banner');
+      if (savedHero) applyHeroBannerImage(savedHero);
+    }
+
+    // LOGO HANDLING
+    function applyLogoImage(src) {
+      customLogo = src;
+      const defaultSvg = document.getElementById('defaultLogoSvg');
+      const customImg = document.getElementById('customLogoImg');
+      if (src && src.trim().length > 5) {
+        defaultSvg.classList.add('hidden');
+        customImg.src = src;
+        customImg.classList.remove('hidden');
+      } else {
+        defaultSvg.classList.remove('hidden');
+        customImg.classList.add('hidden');
+        customImg.src = '';
+      }
+    }
+
+    function openEditLogoModal() {
+      document.getElementById('logoUrlInput').value = customLogo.startsWith('data:') ? '' : customLogo;
+      document.getElementById('logoModalPreview').src = customLogo || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>';
+      document.getElementById('logoEditModal').classList.remove('hidden');
+    }
+
+    function closeEditLogoModal() {
+      document.getElementById('logoEditModal').classList.add('hidden');
+    }
+
+    function handleLogoFileSelect(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          compressImage(evt.target.result, 300, 300, 0.85, function(compressed) {
+            document.getElementById('logoModalPreview').src = compressed;
+          });
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function updateLogoPreviewFromUrl() {
+      const url = document.getElementById('logoUrlInput').value.trim();
+      if (url) {
+        document.getElementById('logoModalPreview').src = url;
+      }
+    }
+
+    function saveLogoChanges() {
+      const preview = document.getElementById('logoModalPreview').src;
+      if (preview && !preview.includes('<svg')) {
+        applyLogoImage(preview);
+        try { localStorage.setItem('vac_logo', preview); } catch(e) {}
+      }
+      closeEditLogoModal();
+    }
+
+    function resetToDefaultLogo() {
+      applyLogoImage('');
+      localStorage.removeItem('vac_logo');
+      closeEditLogoModal();
+    }
+
+    // HERO BANNER IMAGE HANDLING
+    function applyHeroBannerImage(src) {
+      customHeroBanner = src;
+      if (src) {
+        document.getElementById('masterBannerImg').src = src;
+        document.getElementById('modalBoardZoomImg').src = src;
+      }
+    }
+
+    function openEditHeroModal() {
+      document.getElementById('heroUrlInput').value = customHeroBanner.startsWith('data:') ? '' : customHeroBanner;
+      document.getElementById('heroModalPreview').src = customHeroBanner || document.getElementById('masterBannerImg').src;
+      document.getElementById('heroEditModal').classList.remove('hidden');
+    }
+
+    function closeEditHeroModal() {
+      document.getElementById('heroEditModal').classList.add('hidden');
+    }
+
+    function handleHeroFileSelect(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          compressImage(evt.target.result, 1200, 800, 0.75, function(compressed) {
+            document.getElementById('heroModalPreview').src = compressed;
+          });
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function updateHeroPreviewFromUrl() {
+      const url = document.getElementById('heroUrlInput').value.trim();
+      if (url) {
+        document.getElementById('heroModalPreview').src = url;
+      }
+    }
+
+    function saveHeroBannerChanges() {
+      const preview = document.getElementById('heroModalPreview').src;
+      if (preview) {
+        applyHeroBannerImage(preview);
+        try { localStorage.setItem('vac_hero_banner', preview); } catch(e) {}
+      }
+      closeEditHeroModal();
+    }
+
+    // KEYBOARD SHORTCUT (Ctrl + Shift + O)
+    function setupKeyboardShortcuts() {
+      window.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'O' || e.key === 'o')) {
+          e.preventDefault();
+          requestOwnerAccess();
+        }
+      });
+    }
+
+    // TRIGGER QUICK IMAGE PICKER DIRECTLY ON CARD
+    function triggerQuickImageUpload(prodId) {
+      activeQuickUploadProdId = prodId;
+      const fileInput = document.getElementById('directProductFileInput');
+      fileInput.value = '';
+      fileInput.click();
+    }
+
+    function handleDirectFileChange(e) {
+      const file = e.target.files[0];
+      if (file && activeQuickUploadProdId) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          compressImage(evt.target.result, 600, 600, 0.75, function(compressed) {
+            const idx = products.findIndex(p => p.id === activeQuickUploadProdId);
+            if (idx !== -1) {
+              products[idx].image = compressed;
+              saveProductsToStorage();
+              renderProducts();
+            }
+          });
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // RENDER PRODUCTS
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      const searchVal = (document.getElementById('productSearch').value || '').toLowerCase().trim();
+      
+      const filtered = products.filter(p => {
+        const matchCat = (currentCategory === 'all') || (p.category === currentCategory);
+        const matchSearch = !searchVal || 
+          p.name.toLowerCase().includes(searchVal) || 
+          (p.hindi && p.hindi.toLowerCase().includes(searchVal)) || 
+          (p.technical && p.technical.toLowerCase().includes(searchVal)) || 
+          (p.crops && p.crops.toLowerCase().includes(searchVal));
+        return matchCat && matchSearch;
+      });
+
+      document.getElementById('countAll').textContent = products.length;
+      document.getElementById('noResults').classList.toggle('hidden', filtered.length > 0);
+
+      grid.innerHTML = filtered.map(p => {
+        const badgeColor = getCategoryColor(p.category);
+        const hasCustomImg = p.image && p.image.trim().length > 5;
+        const displayImg = hasCustomImg ? p.image : UNLOADED_PLACEHOLDER_IMG;
+        
+        let customColsHtml = '';
+        if (customColumns.length > 0) {
+          customColsHtml = customColumns.map(col => {
+            const val = (p.extraFields && p.extraFields[col]) ? p.extraFields[col] : '—';
+            return `<div class="text-[11px] flex justify-between border-t border-slate-100 pt-1 text-slate-600">
+              <span class="font-bold text-slate-500">${col}:</span>
+              <span>${val}</span>
+            </div>`;
+          }).join('');
+        }
+
+        return `
+          <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col relative group">
+            
+            ${isOwnerMode ? `
+              <div class="absolute top-2.5 right-2.5 z-20 flex gap-1">
+                <button onclick="openProductEditModal('${p.id}')" class="px-2 py-1 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded text-[11px] shadow">
+                  <i class="fa-solid fa-pen-to-square"></i> Edit
+                </button>
+                <button onclick="deleteProduct('${p.id}')" class="px-2 py-1 bg-red-600 hover:bg-red-700 text-white rounded text-[11px] shadow">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            ` : ''}
+
+            <!-- PRODUCT IMAGE CONTAINER -->
+            <div class="h-60 bg-gradient-to-b from-slate-50 to-white flex items-center justify-center p-3 relative border-b border-slate-100 overflow-hidden">
+              <img src="${displayImg}" alt="${p.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300 drop-shadow-md">
+              
+              <!-- OWNER MODE OVERLAY DIRECT PHOTO CHANGE BUTTON -->
+              ${isOwnerMode ? `
+                <div class="absolute inset-0 bg-slate-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2 z-10 p-2">
+                  <button onclick="triggerQuickImageUpload('${p.id}')" class="px-3 py-1.5 bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs rounded-lg shadow-lg flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-upload"></i> Upload Image
+                  </button>
+                  <button onclick="openProductEditModal('${p.id}')" class="px-3 py-1.5 bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs rounded-lg shadow-lg flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-link"></i> By URL / Edit
+                  </button>
+                </div>
+              ` : ''}
+
+              <span class="absolute top-3 left-3 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider ${badgeColor}">
+                ${p.category}
+              </span>
+            </div>
+
+            <!-- DETAILS BODY -->
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-baseline justify-between gap-2">
+                  <h3 class="text-xl font-black text-slate-900 tracking-tight">${p.name}</h3>
+                  <span class="font-hindi text-sm font-bold text-brand-green">${p.hindi || ''}</span>
+                </div>
+                
+                <p class="text-xs font-semibold text-slate-700 mt-1 line-clamp-2">
+                  <i class="fa-solid fa-atom text-slate-400 mr-1 text-[10px]"></i>${p.technical}
+                </p>
+
+                ${p.tagline ? `
+                  <p class="text-[11px] text-brand-red font-medium italic mt-1 font-hindi">${p.tagline}</p>
+                ` : ''}
+
+                <div class="mt-2 text-[11px] text-slate-500">
+                  <strong class="text-slate-600">Target Crops:</strong> ${p.crops || 'Agricultural field crops'}
+                </div>
+
+                ${customColsHtml ? `<div class="mt-2 space-y-1">${customColsHtml}</div>` : ''}
+              </div>
+
+              <!-- BUTTONS -->
+              <div class="pt-2 flex items-center gap-2">
+                <a href="https://wa.me/919557480059?text=Hello%20Vinayak%20Agro%20Chem,%20I%20am%20enquiring%20about%20${encodeURIComponent(p.name)}%20(${encodeURIComponent(p.technical)})" target="_blank" class="flex-1 py-2 bg-brand-green hover:bg-brand-darkgreen text-white text-xs font-bold rounded-lg transition text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Dealer Enquiry</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function getCategoryColor(cat) {
+      switch(cat) {
+        case 'Insecticide': return 'bg-red-100 text-red-800 border border-red-200';
+        case 'Fungicide': return 'bg-purple-100 text-purple-800 border border-purple-200';
+        case 'Plant Growth Regulator': return 'bg-emerald-100 text-emerald-800 border border-emerald-200';
+        case 'Herbicide': return 'bg-amber-100 text-amber-800 border border-amber-200';
+        case 'Crop Nutrition': return 'bg-blue-100 text-blue-800 border border-blue-200';
+        default: return 'bg-slate-100 text-slate-800 border border-slate-200';
+      }
+    }
+
+    // CATEGORY & SEARCH FILTERING
+    function setCategoryFilter(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if(btn.getAttribute('data-cat') === cat) {
+          btn.className = "cat-btn active px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-brand-green text-white shadow-sm";
+        } else {
+          btn.className = "cat-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200";
+        }
+      });
+      renderProducts();
+    }
+
+    function filterProducts() {
+      renderProducts();
+    }
+
+    function filterByCrop(cropName) {
+      document.getElementById('productSearch').value = cropName;
+      setCategoryFilter('all');
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // OWNER ACCESS INVOCATION
+    function requestOwnerAccess() {
+      if (isOwnerMode) {
+        toggleOwnerMode();
+      } else {
+        document.getElementById('pinInput').value = '';
+        document.getElementById('pinError').classList.add('hidden');
+        document.getElementById('pinModal').classList.remove('hidden');
+        setTimeout(() => document.getElementById('pinInput').focus(), 50);
+      }
+    }
+
+    function toggleOwnerMode() {
+      if (isOwnerMode) {
+        isOwnerMode = false;
+        applyOwnerModeUI();
+      } else {
+        requestOwnerAccess();
+      }
+    }
+
+    function closePinModal() {
+      document.getElementById('pinModal').classList.add('hidden');
+    }
+
+    function verifyOwnerPin() {
+      const pin = document.getElementById('pinInput').value.trim();
+      if (pin === '0469') {
+        isOwnerMode = true;
+        closePinModal();
+        applyOwnerModeUI();
+      } else {
+        document.getElementById('pinError').classList.remove('hidden');
+      }
+    }
+
+    function applyOwnerModeUI() {
+      const toolbar = document.getElementById('ownerToolbar');
+      const quickEditLogoBtn = document.getElementById('quickEditLogoBtn');
+      const quickEditHeroBtn = document.getElementById('quickEditHeroBtn');
+
+      if (isOwnerMode) {
+        toolbar.classList.remove('hidden');
+        toolbar.classList.add('flex');
+        quickEditLogoBtn.classList.remove('hidden');
+        quickEditHeroBtn.classList.remove('hidden');
+        quickEditHeroBtn.classList.add('flex');
+      } else {
+        toolbar.classList.add('hidden');
+        toolbar.classList.remove('flex');
+        quickEditLogoBtn.classList.add('hidden');
+        quickEditHeroBtn.classList.add('hidden');
+        quickEditHeroBtn.classList.remove('flex');
+      }
+
+      document.querySelectorAll('.editable-text').forEach(el => {
+        el.setAttribute('contenteditable', isOwnerMode ? 'true' : 'false');
+      });
+
+      renderProducts();
+    }
+
+    // INLINE TEXT EDITING AUTOSAVE
+    function setupEditableListeners() {
+      document.querySelectorAll('.editable-text').forEach(el => {
+        el.addEventListener('blur', function() {
+          const textMap = {};
+          document.querySelectorAll('.editable-text').forEach(node => {
+            const key = node.getAttribute('data-key');
+            if (key) textMap[key] = node.textContent.trim();
+          });
+          try { localStorage.setItem('vac_texts', JSON.stringify(textMap)); } catch(e) {}
+        });
+      });
+    }
+
+    // PRODUCT EDIT MODAL & IMAGE UPLOAD
+    function openProductEditModal(prodId) {
+      const p = products.find(item => item.id === prodId);
+      if (!p) return;
+
+      document.getElementById('productModalTitle').textContent = `Edit: ${p.name}`;
+      document.getElementById('editProdId').value = p.id;
+      document.getElementById('editProdName').value = p.name;
+      document.getElementById('editProdHindi').value = p.hindi || '';
+      document.getElementById('editProdTechnical').value = p.technical;
+      document.getElementById('editProdCategory').value = p.category;
+      document.getElementById('editProdCrops').value = p.crops || '';
+      document.getElementById('editImageUrl').value = (p.image && !p.image.startsWith('data:')) ? p.image : '';
+      document.getElementById('editImagePreview').src = (p.image && p.image.length > 5) ? p.image : UNLOADED_PLACEHOLDER_IMG;
+      document.getElementById('editImageFile').value = '';
+
+      const dynContainer = document.getElementById('dynamicCustomFields');
+      dynContainer.innerHTML = '';
+      customColumns.forEach(col => {
+        const val = (p.extraFields && p.extraFields[col]) ? p.extraFields[col] : '';
+        const field = document.createElement('div');
+        field.innerHTML = `
+          <label class="block font-bold text-slate-700 mb-1">${col}</label>
+          <input type="text" data-col="${col}" value="${val}" class="w-full border border-slate-300 rounded-lg px-3 py-1.5 text-xs dyn-col-input">
+        `;
+        dynContainer.appendChild(field);
+      });
+
+      document.getElementById('productEditModal').classList.remove('hidden');
+    }
+
+    function closeProductEditModal() {
+      document.getElementById('productEditModal').classList.add('hidden');
+    }
+
+    function handleImageFileSelect(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          compressImage(evt.target.result, 600, 600, 0.75, function(compressed) {
+            document.getElementById('editImagePreview').src = compressed;
+            document.getElementById('editImageUrl').value = '';
+          });
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function updateImagePreviewFromUrl() {
+      const url = document.getElementById('editImageUrl').value.trim();
+      if (url) {
+        document.getElementById('editImagePreview').src = url;
+      }
+    }
+
+    function saveProductChanges(e) {
+      e.preventDefault();
+      const id = document.getElementById('editProdId').value;
+      const idx = products.findIndex(p => p.id === id);
+      if (idx === -1) return;
+
+      products[idx].name = document.getElementById('editProdName').value.trim();
+      products[idx].hindi = document.getElementById('editProdHindi').value.trim();
+      products[idx].technical = document.getElementById('editProdTechnical').value.trim();
+      products[idx].category = document.getElementById('editProdCategory').value;
+      products[idx].crops = document.getElementById('editProdCrops').value.trim();
+
+      const urlInput = document.getElementById('editImageUrl').value.trim();
+      const previewSrc = document.getElementById('editImagePreview').src;
+
+      if (urlInput) {
+        products[idx].image = urlInput;
+      } else if (previewSrc && previewSrc.length > 5 && !previewSrc.includes('<svg')) {
+        products[idx].image = previewSrc;
+      }
+
+      if (!products[idx].extraFields) products[idx].extraFields = {};
+      document.querySelectorAll('.dyn-col-input').forEach(input => {
+        const col = input.getAttribute('data-col');
+        products[idx].extraFields[col] = input.value.trim();
+      });
+
+      saveProductsToStorage();
+      closeProductEditModal();
+      renderProducts();
+    }
+
+    function openAddProductModal() {
+      const newId = 'PROD_' + Date.now();
+      const newProd = {
+        id: newId,
+        name: "NEW PRODUCT",
+        hindi: "नया उत्पाद",
+        technical: "Technical formulation",
+        category: "Insecticide",
+        crops: "Field Crops",
+        image: "",
+        tagline: "",
+        extraFields: {}
+      };
+      products.unshift(newProd);
+      saveProductsToStorage();
+      renderProducts();
+      openProductEditModal(newId);
+    }
+
+    function deleteProduct(prodId) {
+      if (confirm('Are you sure you want to delete this product?')) {
+        products = products.filter(p => p.id !== prodId);
+        saveProductsToStorage();
+        renderProducts();
+      }
+    }
+
+    // ADD EXTRA COLUMN
+    function openAddColumnModal() {
+      document.getElementById('newColumnName').value = '';
+      document.getElementById('addColumnModal').classList.remove('hidden');
+      document.getElementById('newColumnName').focus();
+    }
+
+    function closeAddColumnModal() {
+      document.getElementById('addColumnModal').classList.add('hidden');
+    }
+
+    function confirmAddColumn() {
+      const name = document.getElementById('newColumnName').value.trim();
+      if (name && !customColumns.includes(name)) {
+        customColumns.push(name);
+        try { localStorage.setItem('vac_columns', JSON.stringify(customColumns)); } catch(e) {}
+        closeAddColumnModal();
+        renderProducts();
+      }
+    }
+
+    // MASTER BANNER MODAL
+    function viewMasterBannerModal() {
+      document.getElementById('masterBannerModal').classList.remove('hidden');
+    }
+
+    function closeMasterBannerModal() {
+      document.getElementById('masterBannerModal').classList.add('hidden');
+    }
+
+    // DEALERSHIP FORM SUBMIT
+    function handleDealerSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('dealerName').value.trim();
+      const firm = document.getElementById('dealerFirm').value.trim();
+      const mobile = document.getElementById('dealerMobile').value.trim();
+      const district = document.getElementById('dealerDistrict').value.trim();
+      const state = document.getElementById('dealerState').value.trim();
+      const products = document.getElementById('dealerProducts').value.trim();
+      const msg = document.getElementById('dealerMessage').value.trim();
+
+      const text = `New Dealership Enquiry from Website:\n• Name: ${name}\n• Firm: ${firm}\n• Phone: ${mobile}\n• Location: ${district}, ${state}\n• Products: ${products}\n• Message: ${msg}`;
+      const url = `https://wa.me/919557480059?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      alert('Thank you! Your dealership enquiry is being directed to Vinayak Agro Chem WhatsApp desk.');
+      document.getElementById('dealerForm').reset();
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // EXPORT STANDALONE HTML
+    function exportStandaloneHTML() {
+      const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([fullHtml], { type: 'text/html' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'vinayak-agro-chem.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
+</html>
